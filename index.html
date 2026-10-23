@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070817">
+  <title>Flowspace — Make progress feel effortless</title>
+  <meta name="description" content="Plan projects, focus your team, and track meaningful progress with Flowspace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#top" class="logo" aria-label="Flowspace home">
+      <span class="logo-mark"><i data-lucide="layers"></i></span>flowspace<span class="logo-dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <i data-lucide="menu"></i>
+    </button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#features">Product</a>
+      <a href="#workflow">Solutions</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">About us</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="login-link" href="#pricing">Log in</a>
+      <a class="button button-light button-nav" href="#pricing">Get started <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      
+      <div class="hero-content">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> THE WORKSPACE FOR BIG IDEAS</span>
+        <h1 id="heroTitle">Make work feel<br><span class="gradient-text">like progress.</span></h1>
+        <p class="hero-description">Bring your projects, priorities, and people together. Flowspace helps your team spend less time managing work and more time moving it forward.</p>
+        
+        <div class="hero-actions">
+          <a href="#dashboard" class="button button-primary">Get started <i data-lucide="arrow-right"></i></a>
+          <a href="#features" class="button button-outline"><i data-lucide="play-circle"></i> Explore Flowspace</a>
+        </div>
+        
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>JD</span><span>MK</span><span>AL</span><span>+2k</span></div>
+          <p><strong>Loved by focused teams</strong><small>Built for the way great work happens.</small></p>
+        </div>
+      </div>
+
+      <div class="dashboard-preview" id="dashboard" role="img" aria-label="Static illustration of a Flowspace workspace dashboard">
+        <div class="preview-window">
+          <div class="preview-topbar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>Jordan's workspace</span>
+            <div class="preview-top-actions">
+              <span class="preview-tool" aria-hidden="true"><i data-lucide="search"></i></span>
+              <i data-lucide="bell"></i>
+              <span class="mini-avatar">JD</span>
+            </div>
+          </div>
+          
+          <div class="preview-layout">
+            <aside class="preview-sidebar">
+              <div class="preview-workspace">
+                <span class="workspace-glyph"><i data-lucide="layers"></i></span>
+                <span><b>Acme Studio</b><small>Free workspace</small></span>
+                <i data-lucide="chevrons-up-down"></i>
+              </div>
+              
+              <small class="sidebar-caption">WORKSPACE</small>
+              <span class="side-link active"><i data-lucide="layout-dashboard"></i> Overview</span>
+              <span class="side-link"><i data-lucide="check-square"></i> My tasks <span>8</span></span>
+              <span class="side-link"><i data-lucide="folder-kanban"></i> Projects</span>
+              <span class="side-link"><i data-lucide="calendar-days"></i> Calendar</span>
+              
+              <small class="sidebar-caption team-caption">YOUR TEAMS</small>
+              <span class="side-link"><i class="team-dot dot-violet"></i> Design team</span>
+              <span class="side-link"><i class="team-dot dot-blue"></i> Product team</span>
+              
+              <div class="sidebar-profile">
+                <span class="mini-avatar">JD</span>
+                <span><b>Jordan Davis</b><small>Workspace admin</small></span>
+                <i data-lucide="more-horizontal"></i>
+              </div>
+            </aside>
+            
+            <div class="preview-main">
+              <div class="preview-heading">
+                <div>
+                  <small>MONDAY, OCTOBER 19</small>
+                  <h2>Good morning, Jordan <span>✳</span></h2>
+                  <p>Here's what's moving across your workspace.</p>
+                </div>
+                <span class="preview-add"><i data-lucide="plus"></i><span>New task</span></span>
+              </div>
+              
+              <div class="preview-stats">
+                <article><small>Projects in motion</small><b>12 <span>+2 this month</span></b></article>
+                <article><small>Tasks completed</small><b>48 <span>↑ 12.5%</span></b></article>
+                <article><small>Focus time</small><b>26.4 <span>hours this week</span></b></article>
+              </div>
+              
+              <div class="preview-panels">
+                <section class="preview-card tasks-card">
+                  <div class="card-heading">
+                    <span><b>Today's priorities</b><small>Keep your momentum going</small></span>
+                    <span class="plain-button">View all <i data-lucide="arrow-right"></i></span>
+                  </div>
+                  
+                  <div class="task-list">
+                    <div class="task-row is-complete"><span class="task-check"></span><span class="task-copy"><strong>Finalize landing page design</strong><small><i class="priority high"></i> High priority · Design</small></span><span class="task-time">10:30</span></div>
+                    <div class="task-row"><span class="task-check"></span><span class="task-copy"><strong>Review sprint progress</strong><small><i class="priority medium"></i> Medium · Product</small></span><span class="task-time">12:00</span></div>
+                    <div class="task-row"><span class="task-check"></span><span class="task-copy"><strong>Prepare weekly report</strong><small><i class="priority low"></i> Low priority · Planning</small></span><span class="task-time">14:00</span></div>
+                    <div class="task-row"><span class="task-check"></span><span class="task-copy"><strong>Team sync meeting</strong><small><i class="priority medium"></i> Medium · Team</small></span><span class="task-time">16:00</span></div>
+                  </div>
+                  
+                  <div class="task-footer">
+                    <span>1 of 4 tasks completed</span>
+                    <div class="progress-track"><span style="width:25%"></span></div>
+                  </div>
+                </section>
+                
+                <section class="preview-card meeting-card">
+                  <div class="card-heading">
+                    <span><b>Weekly meeting</b><small>Today · 2:30 PM</small></span>
+                    <span class="meeting-icon"><i data-lucide="users"></i></span>
+                  </div>
+                  <p>Product &amp; design sync</p>
+                  <div class="meeting-people"><span>JD</span><span>MK</span><span>AL</span><span>+3</span></div>
+                  <div class="meeting-actions"><span class="share-button">Share notes</span><span class="join-button">Join</span></div>
+                </section>
+                
+                <section class="preview-card project-card project-row">
+                  <div class="card-heading">
+                    <span><b>Website redesign</b><small>Design team · 4 members</small></span>
+                    <span class="project-status">In progress</span>
+                  </div>
+                  <div class="project-progress"><div><span style="width:72%"></span></div><small>72%</small></div>
+                  <div class="project-meta"><span>Next milestone</span><b>Homepage review · Oct 22</b></div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="floating-note note-focus"><span><i data-lucide="sparkles"></i></span><b>Deep work mode</b><small>Focus time protected</small></div>
+        <div class="floating-note note-progress"><span><i data-lucide="trending-up"></i></span><b>Team progress</b><small>+18% this week</small></div>
+      </div>
+      
+      <div class="trusted">
+        <span>TRUSTED BY TEAMS THAT BUILD THE FUTURE</span>
+        <div class="trusted-logos"><b>◈ Dell</b><b>zendesk</b><b>◉ Rakuten</b><b>◈ FIGMA</b><b>◉ NCR</b><b>◈ Lattice</b><b>TED</b></div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section section-wrap" id="features">
+      <div class="section-heading">
+        <span class="section-tag">FEATURES</span>
+        <h2>Everything you need<br>to <span class="gradient-text">do your best work.</span></h2>
+        <p>Simple, thoughtful tools help your team stay focused, aligned, and moving in the same direction.</p>
+      </div>
+      
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon"><i data-lucide="target"></i></span>
+          <h3>Stay focused and avoid interruptions</h3>
+          <p>Protect your best hours with focus sessions and clear priorities that keep important work in view.</p>
+          <div class="feature-mini focus-mini">
+            <span class="mini-ring"><i data-lucide="zap"></i></span>
+            <span><b>Focus session</b><small>52 minutes of deep work</small></span>
+            <span class="mini-live"></span>
+          </div>
+        </article>
+        
+        <article class="feature-card">
+          <span class="feature-icon"><i data-lucide="list-checks"></i></span>
+          <h3>Keep track of tasks</h3>
+          <p>Turn ideas into clear next steps, with the right owner and deadline attached to every task.</p>
+          <div class="feature-mini task-mini">
+            <span class="mini-check done"><i data-lucide="check"></i></span>
+            <b>Review product brief</b>
+            <small>Today</small>
+          </div>
+        </article>
+        
+        <article class="feature-card">
+          <span class="feature-icon"><i data-lucide="zap"></i></span>
+          <h3>The tools all in one</h3>
+          <p>Bring conversations, project updates, and daily planning together in one connected workspace.</p>
+          <div class="integration-mini"><span>F</span><span>N</span><span>◈</span><span>＋</span><small>Connected tools</small></div>
+        </article>
+      </div>
+
+      <div class="showcase-grid" id="workflow">
+        <article class="showcase-card showcase-focus">
+          <div class="showcase-copy">
+            <span class="section-tag">SMART PLANNING</span>
+            <h3>Goal setting<br>and tracking</h3>
+            <p>Make meaningful progress visible. Set team goals, track milestones, and understand what's moving forward.</p>
+            <a href="#pricing" class="inline-link">Explore goal tracking <i data-lucide="arrow-up-right"></i></a>
+          </div>
+          <div class="goal-widget">
+            <div class="widget-top"><b>Quarterly goals</b><span>•••</span></div>
+            <small>Launch a better customer experience</small>
+            <div class="goal-meter"><span style="width:68%"></span></div>
+            <div class="goal-meta"><b>68% complete</b><span>6 of 9 milestones</span></div>
+            <div class="goal-list">
+              <span><i data-lucide="check-circle-2"></i> Customer interviews</span>
+              <span><i data-lucide="circle"></i> Prototype review</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="showcase-card showcase-calendar">
+          <span class="feature-icon"><i data-lucide="calendar-check"></i></span>
+          <span class="section-tag">TEAM RHYTHM</span>
+          <h3>Meetings with<br>a clear purpose.</h3>
+          <p>Keep your team in sync with agendas, shared notes, and decisions that turn into action.</p>
+          <div class="calendar-widget">
+            <div><b>Tuesday</b><small>October</small><strong>18</strong></div>
+            <div class="calendar-lines">
+              <span>09:30 <b>Weekly planning</b></span>
+              <span>11:00 <b>Design review</b></span>
+              <span>14:30 <b>Product sync</b></span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="showcase-card showcase-integrations">
+          <span class="feature-icon"><i data-lucide="blocks"></i></span>
+          <span class="section-tag">CONNECTED WORK</span>
+          <h3>Your tools,<br>working together.</h3>
+          <p>Keep your favorite tools connected so updates and decisions stay close to the work.</p>
+          <div class="connected-widget">
+            <span class="connected-icon violet-icon">F</span><span class="connect-line"></span>
+            <span class="connected-icon blue-icon">N</span><span class="connect-line"></span>
+            <span class="connected-icon green-icon">S</span><span class="connect-line"></span>
+            <span class="connected-icon pink-icon">↗</span>
+          </div>
+          <small class="integration-caption"><i data-lucide="check-circle-2"></i> 12 apps connected</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section section-wrap" id="pricing">
+      <div class="section-heading">
+        <span class="section-tag">PRICING</span>
+        <h2>Choose a plan that<br><span class="gradient-text">fits your flow.</span></h2>
+        <p>Start with the essentials. Make room for more as your team grows.</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <article class="price-card">
+          <span class="plan-label">STARTER</span>
+          <h3>Free</h3>
+          <p>For personal projects and small beginnings.</p>
+          <div class="price">$0 <span>/ forever</span></div>
+          <a href="#cta" class="button button-plan plan-button">Choose Starter</a>
+          <ul>
+            <li><i data-lucide="check-circle-2"></i> Up to 3 projects</li>
+            <li><i data-lucide="check-circle-2"></i> Essential task management</li>
+            <li><i data-lucide="check-circle-2"></i> Basic progress tracking</li>
+            <li><i data-lucide="check-circle-2"></i> Personal workspace</li>
+          </ul>
+        </article>
+        
+        <article class="price-card price-featured">
+          <span class="popular-label">MOST POPULAR</span>
+          <span class="plan-label">PRO</span>
+          <h3>Professional</h3>
+          <p>For teams ready to find their momentum.</p>
+          <div class="price">$12 <span>/ user / month</span></div>
+          <a href="#cta" class="button button-plan plan-button">Choose Professional</a>
+          <ul>
+            <li><i data-lucide="check-circle-2"></i> Unlimited projects</li>
+            <li><i data-lucide="check-circle-2"></i> Advanced analytics</li>
+            <li><i data-lucide="check-circle-2"></i> Team collaboration</li>
+            <li><i data-lucide="check-circle-2"></i> Custom workflows</li>
+            <li><i data-lucide="check-circle-2"></i> Priority support</li>
+          </ul>
+        </article>
+        
+        <article class="price-card">
+          <span class="plan-label">TEAM</span>
+          <h3>Business</h3>
+          <p>For teams building something bigger.</p>
+          <div class="price">$24 <span>/ user / month</span></div>
+          <a href="#cta" class="button button-plan plan-button">Choose Business</a>
+          <ul>
+            <li><i data-lucide="check-circle-2"></i> Everything in Pro</li>
+            <li><i data-lucide="check-circle-2"></i> Team workspaces</li>
+            <li><i data-lucide="check-circle-2"></i> Advanced permissions</li>
+            <li><i data-lucide="check-circle-2"></i> Dedicated onboarding</li>
+            <li><i data-lucide="check-circle-2"></i> Team reporting</li>
+          </ul>
+        </article>
+      </div>
+      <p class="pricing-note">Concept pricing for demonstration purposes only.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section section-wrap" id="testimonials">
+      <div class="section-heading">
+        <span class="section-tag">KIND WORDS</span>
+        <h2>Good work speaks<br><span class="gradient-text">for itself.</span></h2>
+        <p>See what teams say when their work finally flows.</p>
+      </div>
+      
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Flowspace gave our team the clarity to focus on what matters. We spend less time coordinating and more time creating.”</blockquote>
+          <div class="testimonial-person">
+            <span class="person-avatar avatar-a">FM</span>
+            <span><b>Floyd Miles</b><small>Product Manager</small></span>
+          </div>
+        </article>
+        
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Everything feels calmer. Our projects, priorities, and conversations finally live together in one place.”</blockquote>
+          <div class="testimonial-person">
+            <span class="person-avatar avatar-b">DR</span>
+            <span><b>Darlene Robertson</b><small>Creative Director</small></span>
+          </div>
+        </article>
+        
+        <article class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“We went from scattered updates to a team that knows exactly what to do next. It changed our rhythm.”</blockquote>
+          <div class="testimonial-person">
+            <span class="person-avatar avatar-c">JL</span>
+            <span><b>Jenny Wilson</b><small>Founder, Better Co.</small></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-wrap" id="faq">
+      <div class="section-heading">
+        <span class="section-tag">FAQ</span>
+        <h2>A few things<br>you might <span class="gradient-text">wonder.</span></h2>
+        <p>Quick answers to help you get started with Flowspace.</p>
+      </div>
+      
+      <div class="faq-list">
+        <details>
+          <summary>How does Flowspace help my team work better?<i data-lucide="chevron-down"></i></summary>
+          <p>Flowspace brings projects, tasks, and team updates into one shared view, making it easier to stay aligned and focus on the next important step.</p>
+        </details>
+        <details>
+          <summary>Is Flowspace suitable for small teams?<i data-lucide="chevron-down"></i></summary>
+          <p>Yes. You can start with a free personal workspace and add projects and teammates as your needs grow.</p>
+        </details>
+        <details>
+          <summary>Can I connect Flowspace with other tools?<i data-lucide="chevron-down"></i></summary>
+          <p>Flowspace is designed to fit into your team's workflow. Integrations shown here are part of this product concept demo.</p>
+        </details>
+        <details>
+          <summary>Can I change my plan later?<i data-lucide="chevron-down"></i></summary>
+          <p>Absolutely. Choose the plan that fits now and move to another plan as your team changes.</p>
+        </details>
+        <details>
+          <summary>Is my workspace data secure?<i data-lucide="chevron-down"></i></summary>
+          <p>This page is a front-end concept demo and does not collect or transmit workspace data.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-wrap" id="cta">
+      <div class="cta-glow"></div>
+      <span class="section-tag">READY WHEN YOU ARE</span>
+      <h2>Make room for<br><span class="gradient-text">great work.</span></h2>
+      <p>Bring your next big idea into focus. Your team's new rhythm starts here.</p>
+      <button class="button button-primary" id="ctaButton">Explore your workspace <i data-lucide="arrow-right"></i></button>
+      <small>Free to start. No pressure. Just a better way to work.</small>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="logo-mark"><i data-lucide="layers"></i></span>flowspace<span class="logo-dot">.</span></a>
+        <p>Make room for what matters.</p>
+        <a class="contact-link" href="mailto:hello@flowspace.example">Get in touch <i data-lucide="arrow-up-right"></i></a>
+      </div>
+      <div class="footer-column">
+        <b>PRODUCT</b>
+        <a href="#features">Features</a>
+        <a href="#workflow">Solutions</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-column">
+        <b>RESOURCES</b>
+        <a href="#faq">Help center</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#faq">FAQs</a>
+      </div>
+      <div class="footer-column">
+        <b>COMPANY</b>
+        <a href="#testimonials">About us</a>
+        <a href="#cta">Contact</a>
+        <a href="#top">Privacy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Flowspace. Concept project by PENTACORE.</span>
+      <span>Made for meaningful work <i data-lucide="heart"></i></span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
